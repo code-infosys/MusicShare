@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB04EAAE-899C-4C0F-BDEA-3DBCDF71F384}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MusicShare</RootNamespace>
+    <AssemblyName>MusicShare</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SOFTWARE\Web Development soft\AjaxControlToolkit.Binary.NET4\AjaxControlToolkitSampleSite\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Id3Lib">
+      <HintPath>C:\Users\sonustar.in\Documents\Visual Studio 2010\Projects\jattmobtest\jattmobtest\bin\Id3Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mp3Lib">
+      <HintPath>C:\Users\sonustar.in\Documents\Visual Studio 2010\Projects\jattmobtest\jattmobtest\bin\Mp3Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="320kb\Chhadta_-_www.DjPunjab.Com14552014025534.mp3" />
+    <Content Include="320kb\Chhadta_-_www.DjPunjab.Com_-%28Jatt.fm%29.mp3" />
+    <Content Include="320kb\Cover\azz51041_denim_m14552014025534.jpg" />
+    <Content Include="320kb\Cover\azz51215_ivory_m14032014030352.jpg" />
+    <Content Include="404NotFound.aspx" />
+    <Content Include="BackEndStar\index.aspx" />
+    <Content Include="BackEndStar\Login.aspx" />
+    <Content Include="BackEndStar\pandingUploading.aspx" />
+    <Content Include="BackEndStar\Uploadings.aspx" />
+    <Content Include="css\default.css" />
+    <Content Include="css\uploadify.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="dewplayer.swf" />
+    <Content Include="FrontEndPages\AtoZTracks.aspx" />
+    <Content Include="FrontEndPages\ByMonthTracks.aspx" />
+    <Content Include="FrontEndPages\LatestTracks.aspx" />
+    <Content Include="FrontEndPages\RecommendedTracks.aspx" />
+    <Content Include="FrontEndPages\SongDetail.aspx" />
+    <Content Include="FrontEndPages\Top20MonthlyTracks.aspx" />
+    <Content Include="FrontEndPages\Top20WeeklyTracks.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="home.aspx" />
+    <Content Include="images\cancel.png" />
+    <Content Include="images\file-uploader-icon.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="320kb\lame\lame.exe" />
+    <Content Include="Login.aspx" />
+    <Content Include="MySongsList.aspx" />
+    <Content Include="ProfileUploader.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery.uploadify.js" />
+    <Content Include="scripts\uploader.swf" />
+    <Content Include="SongUpload.aspx" />
+    <Content Include="apna.fm.png" />
+    <Content Include="swfobject.js" />
+    <Content Include="uc\FooterAds.ascx" />
+    <Content Include="uc\HeaderAds.ascx" />
+    <Content Include="userimg\lshop.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="404NotFound.aspx.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404NotFound.aspx.designer.cs">
+      <DependentUpon>404NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUUp.Master.cs">
+      <DependentUpon>AdminUUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUUp.Master.designer.cs">
+      <DependentUpon>AdminUUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\pandingUploading.aspx.cs">
+      <DependentUpon>pandingUploading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\pandingUploading.aspx.designer.cs">
+      <DependentUpon>pandingUploading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackEndStar\Uploadings.aspx.cs">
+      <DependentUpon>Uploadings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackEndStar\Uploadings.aspx.designer.cs">
+      <DependentUpon>Uploadings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BEadmin.Master.cs">
+      <DependentUpon>BEadmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BEadmin.Master.designer.cs">
+      <DependentUpon>BEadmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\AtoZTracks.aspx.cs">
+      <DependentUpon>AtoZTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\AtoZTracks.aspx.designer.cs">
+      <DependentUpon>AtoZTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\ByMonthTracks.aspx.cs">
+      <DependentUpon>ByMonthTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\ByMonthTracks.aspx.designer.cs">
+      <DependentUpon>ByMonthTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\LatestTracks.aspx.cs">
+      <DependentUpon>LatestTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\LatestTracks.aspx.designer.cs">
+      <DependentUpon>LatestTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\RecommendedTracks.aspx.cs">
+      <DependentUpon>RecommendedTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\RecommendedTracks.aspx.designer.cs">
+      <DependentUpon>RecommendedTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\SongDetail.aspx.cs">
+      <DependentUpon>SongDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\SongDetail.aspx.designer.cs">
+      <DependentUpon>SongDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20MonthlyTracks.aspx.cs">
+      <DependentUpon>Top20MonthlyTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20MonthlyTracks.aspx.designer.cs">
+      <DependentUpon>Top20MonthlyTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20WeeklyTracks.aspx.cs">
+      <DependentUpon>Top20WeeklyTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrontEndPages\Top20WeeklyTracks.aspx.designer.cs">
+      <DependentUpon>Top20WeeklyTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MySongsList.aspx.cs">
+      <DependentUpon>MySongsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MySongsList.aspx.designer.cs">
+      <DependentUpon>MySongsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileUploader.aspx.cs">
+      <DependentUpon>ProfileUploader.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProfileUploader.aspx.designer.cs">
+      <DependentUpon>ProfileUploader.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SongUpload.aspx.cs">
+      <DependentUpon>SongUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SongUpload.aspx.designer.cs">
+      <DependentUpon>SongUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\FooterAds.ascx.cs">
+      <DependentUpon>FooterAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\FooterAds.ascx.designer.cs">
+      <DependentUpon>FooterAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\HeaderAds.ascx.cs">
+      <DependentUpon>HeaderAds.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\HeaderAds.ascx.designer.cs">
+      <DependentUpon>HeaderAds.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="wapcode\Datastar.cs" />
+    <Compile Include="wapcode\MSContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="wapcode\StarExtension.cs" />
+    <Compile Include="wapcode\StarMethods.cs" />
+    <Compile Include="wapcode\validData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminUUp.Master" />
+    <Content Include="Main.Master" />
+    <Content Include="wapcode\MSContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MSContext.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>MusicShare</CustomToolNamespace>
+    </Content>
+    <Content Include="scripts\uploader.fla" />
+    <Content Include="Upload.ashx" />
+    <Content Include="BEadmin.Master" />
+    <None Include="Properties\PublishProfiles\MusicShare.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wapcode\MSContext.dbml.layout">
+      <DependentUpon>MSContext.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="128kb\" />
+    <Folder Include="48kb\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:34277/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

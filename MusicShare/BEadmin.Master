@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BEadmin.master.cs" Inherits="MusicShare.BEadmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title> 
+    <style>
+        .head a
+        {
+            color:#ffffff !important;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Literal ID="litLogo" runat="server"></asp:Literal>
+              <hr />
+            <div class="head" style="background:#000000;color:white;"> 
+              Hi: <%--<%=Session["USERDANAME"].ToString() %> --%>| <a href="/welcomestar">Home</a> | <a href="/dailyuploading">Latest Uploads</a> | <a href="/skipeduploaded">Skiped Uploading</a>  
+                | <asp:LinkButton runat="server" ID="lbtnLogout" OnClick="lbtnLogout_Click" Text="Logout"></asp:LinkButton>
+            </div>
+         
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+            <br />
+            <hr />
+
+            <div class="head" style="background:#000000;color:white;"><a href="http://jatt.fm">Home</a></div>
+
+            <br />
+
+            <div class="foottext">©2006-14 Jatt.fm</div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MusicShare.Main" %>
+<%@ Register Src="~/uc/HeaderAds.ascx" TagPrefix="uc1" TagName="HeaderAds" %>
+<%@ Register Src="~/uc/FooterAds.ascx" TagPrefix="uc1" TagName="FooterAds" %>
+ 
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Jatt.fm Music Share</title>  
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="canonical" href="http://www.jatt.fm/" />
+   
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Literal ID="litLogo" runat="server"></asp:Literal>
+         
+        <center> 
+            <p>&nbsp;</p>
+            <div class="head">Single Track Music On Jatt.Fm</div>
+            <br />
+                       
+            <br />
+       </center>
+
+        <%--<uc1:headerads runat="server" id="HeaderAds" />--%>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <%--<uc1:FooterAds runat="server" id="FooterAds" />--%>
+
+        <br />
+         <hr />
+         
+        <div class="head"><a href="http://jatt.fm">Home</a> | <a href="/login">Login</a> | <a href="/register">Sign Up Now</a>  </div>
+
+        <br />
+
+        <div class="foottext"> ©2006-14 Jatt.fm</div>
+
+
+    </div>
+    </form>
+</body>
+</html>

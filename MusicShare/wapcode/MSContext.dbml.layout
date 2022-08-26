@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MSContext">
+  <DataContextMoniker Name="/MSContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d5f7c606-a564-4047-9de3-9aaca5bcffc8" absoluteBounds="1, 2.125, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/MSContextDataContext/AdminUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f1ff71d-a627-44cf-9375-0c62b59fdede" absoluteBounds="1.0149999999999997, 2.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ade09059-3280-425e-b28b-e521d50d8cb9" absoluteBounds="7.875, 2.5, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/MSContextDataContext/UserUploader" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a956603-9b4a-4be0-a426-d38b0a1af968" absoluteBounds="7.8900000000000006, 2.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21975e39-10ad-4162-a4f1-9310f827fab8" absoluteBounds="4.5, 2.375, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/MSContextDataContext/TracksWraper" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5ccc60a-6ba4-421e-a756-e146782e6a8f" absoluteBounds="4.5150000000000006, 2.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3 : 3.23159912109375); (4.5 : 3.23159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MSContextDataContext/AdminUser/AdminUser_TracksWraper" />
+      <nodes>
+        <classShapeMoniker Id="d5f7c606-a564-4047-9de3-9aaca5bcffc8" />
+        <classShapeMoniker Id="21975e39-10ad-4162-a4f1-9310f827fab8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 3.96235270182292); (6.5 : 3.96235270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MSContextDataContext/UserUploader/UserUploader_TracksWraper" />
+      <nodes>
+        <classShapeMoniker Id="ade09059-3280-425e-b28b-e521d50d8cb9" />
+        <classShapeMoniker Id="21975e39-10ad-4162-a4f1-9310f827fab8" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
